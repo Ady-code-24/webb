@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Boyfriend's Day 💖</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffd6e0, #ffe9f3, #dff7f6);
+      color: #444;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Floating hearts animation */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .heart {
+      position: absolute;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      opacity: 0.7;
+      transform: rotate(-45deg);
+      animation: float 8s infinite ease-in;
+    }
+    .heart::before, .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: inherit;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: 10px;
+      top: 0;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) rotate(45deg) scale(1); opacity: 0.8; }
+      100% { transform: translateY(-100vh) rotate(45deg) scale(1.5); opacity: 0; }
+    }
+
+    header {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #ffb6c1, #ffcce7);
+      color: #fff;
+      border-bottom-left-radius: 50% 10%;
+      border-bottom-right-radius: 50% 10%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      animation: fadeUp 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .love-note {
+      background: #fffafc;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .timeline {
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+    }
+    .timeline ul {
+      list-style: none;
+    }
+    .timeline li {
+      background: #fff;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .surprise button {
+      background: #ff99c8;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .surprise button:hover {
+      background: #ff77aa;
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 20px;
+      background: #ffe4ec;
+      border-top-left-radius: 50% 10%;
+      border-top-right-radius: 50% 10%;
+      font-weight: bold;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      .gallery img { width: 150px; height: 150px; }
+      .love-note, .timeline { padding: 20px; }
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.8rem; }
+      header p { font-size: 1rem; }
+      .gallery img { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts">
+    <div class="heart" style="left:10%; animation-duration: 6s;"></div>
+    <div class="heart" style="left:30%; animation-duration: 7s; background:white;"></div>
+    <div class="heart" style="left:50%; animation-duration: 8s;"></div>
+    <div class="heart" style="left:70%; animation-duration: 9s; background:white;"></div>
+    <div class="heart" style="left:90%; animation-duration: 10s;"></div>
+  </div>
+
+  <header>
+    <h1>Happy Boyfriend's Day 💖</h1>
+    <p>To the love of my life, my honeybun sugarplum</p>
+  </header>
+
+  <section class="love-note">
+    <h2>Words I wanna say irl but for now read here... 💌</h2>
+    <p>
+      You are the reason behind someone's happiness, you the reason someone live with hopes..<3...  
+      Thank you for being the most amazing boyfriend.  
+      Forever yours, rasmalai 💕
+    </p>
+  </section>
+
+  <section>
+    <h2>only pics I have for now 📸</h2>
+    <div class="gallery">
+      <img src="d:\college syallus sy\WhatsApp Image 2025-10-02 at 17.53.36_de2abd6f.jpg" alt="Memory 1">
+      <img src="d:\college syallus sy\WhatsApp Image 2025-10-02 at 17.53.37_ed418ebc.jpg" alt="Memory 2">
+      <img src="d:\college syallus sy\WhatsApp Image 2025-10-02 at 17.53.39_2122ef9a.jpg" alt="Memory 3">
+    </div>
+  </section>
+
+  <section class="timeline">
+    <h2> 💕our favourites memories💕🌸</h2>
+    <ul>
+      <li>The day we confessed 💗.......I remeber its the most best and precious time for us, when i said yes and the day we said yes and got together, yk baby something in me healed that day...the day you became my man, it was everything to me...you are the best man anyone can get baby and im the luciest to call you mine..i still remebr how we used to give small hints, talk all day and and being shy...omg i love it so much💕</confessed></li>
+      <li>The way we make each other feel💗......Never ever i felt this loved in my life baby, its you who made me feel worthy in this life and i am forever grateful for you...the man you are, is the best kind...im glad the way you open up to me the way you comfortable with me and feel loved..its my pleasure baby...💕</li>
+    </ul>
+  </section>
+
+  <section class="surprise">
+    <h2> 💖A letter for you baby...💕</h2>
+    <a href="him2.html">
+      <button>click here hun💕</button>
+    </a>
+  </section>
+
+  <footer>
+    Made with love by wife for her lovely husband 💖( i love you more 😤)
+  </footer>
+
+</body>
+</html>
